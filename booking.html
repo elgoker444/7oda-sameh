@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>احجز دلوقتي - 7oda Sameh 💈</title>
+<style>
+*{box-sizing:border-box;font-family:system-ui} body{margin:0;background:#0f0f0f;color:#fff;padding:16px}
+.card{background:#1c1c1c;border:1px solid #333;border-radius:16px;padding:16px;max-width:480px;margin:auto}
+h1{text-align:center;color:#FFD700} label{font-weight:700;display:block;margin-top:14px}
+input,select{width:100%;padding:13px;border-radius:10px;border:1px solid #444;background:#111;color:#fff;font-size:16px;margin-top:6px}
+button{width:100%;padding:15px;border:0;border-radius:12px;background:#25D366;color:#fff;font-size:19px;font-weight:800;margin-top:18px}
+.price{text-align:center;color:#FFD700;font-size:20px;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>💈 احجز عند 7oda Sameh</h1>
+<p style="text-align:center;color:#aaa">كوم حمادة - احجز معادك وماتستناش</p>
+<label>اسمك</label><input id="name" placeholder="اكتب اسمك">
+<label>رقم موبايلك</label><input id="phone" placeholder="01xxxxxxxxx" type="tel">
+<label>اختار نوع الحلاقة</label>
+<select id="service" onchange="showPrice()">
+<option value="حلاقة شعر - 50 ج">حلاقة شعر - 50 ج</option>
+<option value="حلاقة شعر طفل - 40 ج">حلاقة شعر طفل - 40 ج</option>
+<option value="عرض السريع (شعر + دقن) - 60 ج">عرض السريع (شعر + دقن) - 60 ج</option>
+<option value="عرض الاستايل (شعر + دقن + ويفي) - 100 ج">عرض الاستايل - 100 ج</option>
+<option value="عرض الروقان (شعر + دقن + استشوار) - 100 ج">عرض الروقان - 100 ج</option>
+<option value="تحديد دقن - 20 ج">تحديد دقن - 20 ج</option>
+<option value="حلاقة دقن - 30 ج">حلاقة دقن - 30 ج</option>
+<option value="استشوار - 40 ج">استشوار - 40 ج</option>
+<option value="جلسة تنظيف بشرة - 100 ج">جلسة تنظيف بشرة - 100 ج</option>
+<option value="باكج العريس الكامل - 500 ج">باكج العريس الكامل - 500 ج</option>
+</select>
+<div class="price" id="price">السعر: 50 جنيه</div>
+<label>اليوم</label><input id="date" type="date">
+<label>الساعة</label><input id="time" type="time">
+<button onclick="book()">✅ احجز على واتساب</button>
+</div>
+<script>
+function showPrice(){let s=document.getElementById('service');let txt=s.value.split('-')[1]||'50 ج';document.getElementById('price').innerText='السعر: '+txt;}
+function book(){
+let name=document.getElementById('name').value.trim();
+let phone=document.getElementById('phone').value.trim();
+let service=document.getElementById('service').value;
+let date=document.getElementById('date').value;
+let time=document.getElementById('time').value;
+if(!name||!phone) return alert('اكتب اسمك ورقمك الأول');
+let myNumber='201003827748';
+let msg=`حجز جديد 💈%0Aالاسم: ${name}%0Aالرقم: ${phone}%0Aالحلاقة: ${service}%0Aاليوم: ${date}%0Aالساعة: ${time}`;
+window.open(`https://wa.me/${myNumber}?text=${msg}`,'_blank');
+}
+</script>
+</body>
+</html>
