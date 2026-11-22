@@ -1,55 +1,74 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>احجز دلوقتي - 7oda Sameh 💈</title>
-<style>
-*{box-sizing:border-box;font-family:system-ui} body{margin:0;background:#0f0f0f;color:#fff;padding:16px}
-.card{background:#1c1c1c;border:1px solid #333;border-radius:16px;padding:16px;max-width:480px;margin:auto}
-h1{text-align:center;color:#FFD700} label{font-weight:700;display:block;margin-top:14px}
-input,select{width:100%;padding:13px;border-radius:10px;border:1px solid #444;background:#111;color:#fff;font-size:16px;margin-top:6px}
-button{width:100%;padding:15px;border:0;border-radius:12px;background:#25D366;color:#fff;font-size:19px;font-weight:800;margin-top:18px}
-.price{text-align:center;color:#FFD700;font-size:20px;margin-top:10px}
-</style>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>احجز - 7oda Sameh 💈</title>
+<style>*{box-sizing:border-box;font-family:system-ui}body{margin:0;background:#0f0f0f;color:#fff;padding:16px}.card{background:#1c1c1c;border:1px solid #333;border-radius:16px;padding:16px;max-width:520px;margin:auto}h1{text-align:center;color:#FFD700}label{font-weight:700;display:block;margin-top:14px}input,select{width:100%;padding:13px;border-radius:10px;border:1px solid #444;background:#111;color:#fff;font-size:16px;margin-top:6px}button{width:100%;padding:15px;border:0;border-radius:12px;background:#25D366;color:#fff;font-size:19px;font-weight:800;margin-top:18px}.price{text-align:center;color:#FFD700;font-size:20px;margin-top:10px}optgroup{color:#FFD700}</style>
 </head>
-<body>
-<div class="card">
-<h1>💈 احجز عند 7oda Sameh</h1>
-<p style="text-align:center;color:#aaa">كوم حمادة - احجز معادك وماتستناش</p>
+<body><div class="card">
+<h1>💈 احجز عند 7oda Sameh</h1><p style="text-align:center;color:#aaa">كوم حمادة - شارع التحرير خلف مطعم جدو</p>
 <label>اسمك</label><input id="name" placeholder="اكتب اسمك">
 <label>رقم موبايلك</label><input id="phone" placeholder="01xxxxxxxxx" type="tel">
-<label>اختار نوع الحلاقة</label>
+<label>اختار الخدمة</label>
 <select id="service" onchange="showPrice()">
-<option value="حلاقة شعر - 50 ج">حلاقة شعر - 50 ج</option>
-<option value="حلاقة شعر طفل - 40 ج">حلاقة شعر طفل - 40 ج</option>
-<option value="عرض السريع (شعر + دقن) - 60 ج">عرض السريع (شعر + دقن) - 60 ج</option>
+<optgroup label="🔥 العروض">
+<option value="عرض السريع (شعر + دقن) - 60 ج">عرض السريع - 60 ج</option>
 <option value="عرض الاستايل (شعر + دقن + ويفي) - 100 ج">عرض الاستايل - 100 ج</option>
 <option value="عرض الروقان (شعر + دقن + استشوار) - 100 ج">عرض الروقان - 100 ج</option>
-<option value="تحديد دقن - 20 ج">تحديد دقن - 20 ج</option>
+<option value="حلاقة الطفل مع التسريحة - 40 ج">حلاقة الطفل مع التسريحة - 40 ج</option>
+</optgroup>
+<optgroup label="✂️ الحلاقة والخدمات">
+<option value="حلاقة شعر - 50 ج">حلاقة شعر - 50 ج</option>
+<option value="حلاقة شعر طفل - 40 ج">حلاقة شعر طفل - 40 ج</option>
+<option value="تحديد دقن - 25 ج">تحديد دقن - 25 ج</option>
+<option value="تحديد كامل - 20 ج">تحديد كامل - 20 ج</option>
 <option value="حلاقة دقن - 30 ج">حلاقة دقن - 30 ج</option>
+<option value="حلاقة دقن بالبخار - 40 ج">حلاقة دقن بالبخار - 40 ج</option>
 <option value="استشوار - 40 ج">استشوار - 40 ج</option>
-<option value="جلسة تنظيف بشرة - 100 ج">جلسة تنظيف بشرة - 100 ج</option>
+<option value="استشوار + مكواة - 50 ج">استشوار + مكواة - 50 ج</option>
+<option value="تسريحة ويفي / كيرلي فوم - 40 ج">تسريحة ويفي / كيرلي فوم - 40 ج</option>
+<option value="كيرلي بليس - 80 ج">كيرلي بليس - 80 ج</option>
+<option value="تونيك (تغطية فراغات) - 20 ج">تونيك - 20 ج</option>
+</optgroup>
+<optgroup label="🧖‍♂️ SPA والبشرة">
+<option value="فوطة سخنة + ساقعة - 25 ج">فوطة سخنة + ساقعة - 25 ج</option>
+<option value="ماسك عادي - 10 ج">ماسك عادي - 10 ج</option>
+<option value="ماسك VIP - 20 ج">ماسك VIP - 20 ج</option>
+<option value="2 ماسك بخار + شفط دهون - 50 ج">2 ماسك بخار + شفط دهون - 50 ج</option>
+<option value="شمع / اتراز - 20 ج">شمع / اتراز - 20 ج</option>
+<option value="شمع كامل الوجه - 40 ج">شمع كامل الوجه - 40 ج</option>
+<option value="جلسة تنظيف بشرة صغرى - 100 ج">تنظيف بشرة صغرى - 100 ج</option>
+<option value="جلسة تنظيف بشرة وسط - 150 ج">تنظيف بشرة وسط - 150 ج</option>
+<option value="جلسة تنظيف VIP + كولاجين - 200 ج">تنظيف VIP + كولاجين - 200 ج</option>
+<option value="جلسة مساج شعر وترطيب - 60 ج">مساج شعر وترطيب - 60 ج</option>
+</optgroup>
+<optgroup label="🎨 المعالجات والصبغات">
+<option value="حمام كريم - 20 ج">حمام كريم - 20 ج</option>
+<option value="حمام زيت عادي - 60 ج">حمام زيت عادي - 60 ج</option>
+<option value="حمام زيت + كولاجين - 120 ج">حمام زيت + كولاجين - 120 ج</option>
+<option value="نانو هاي - 40 ج">نانو هاي - 40 ج</option>
+<option value="نانو كولاجين - 80 ج">نانو كولاجين - 80 ج</option>
+<option value="صبغة سواد - 80 ج">صبغة سواد - 80 ج</option>
+<option value="حنة شعر - 80 ج">حنة شعر - 80 ج</option>
+<option value="صبغة سيلفر - 250 ج">صبغة سيلفر - 250 ج</option>
+<option value="صبغة سيلفر كاملة / الوان - 400 ج">صبغة سيلفر كاملة - 400 ج</option>
+<option value="فرد بروتين - حسب الطول - 400 ج">فرد بروتين - من 200 لـ 400 ج</option>
+</optgroup>
+<optgroup label="🤵 باكج العريس">
 <option value="باكج العريس الكامل - 500 ج">باكج العريس الكامل - 500 ج</option>
+<option value="باكج العريس مع بروتين - 1000 ج">باكج العريس مع بروتين - 1000 ج</option>
+<option value="خدمة العريس في البيت - 1500 ج">خدمة العريس في البيت - 1000 لـ 1500 ج</option>
+</optgroup>
+<optgroup label="🧴 النظافة">
+<option value="فوطة خاصة - 5 ج">فوطة خاصة - 5 ج</option>
+<option value="شفرة حادة - 5 ج">شفرة حادة - 5 ج</option>
+<option value="فوطة تنشيف - 5 ج">فوطة تنشيف - 5 ج</option>
+</optgroup>
 </select>
-<div class="price" id="price">السعر: 50 جنيه</div>
+<div class="price" id="price">السعر: 60 جنيه</div>
 <label>اليوم</label><input id="date" type="date">
 <label>الساعة</label><input id="time" type="time">
 <button onclick="book()">✅ احجز على واتساب</button>
 </div>
 <script>
-function showPrice(){let s=document.getElementById('service');let txt=s.value.split('-')[1]||'50 ج';document.getElementById('price').innerText='السعر: '+txt;}
-function book(){
-let name=document.getElementById('name').value.trim();
-let phone=document.getElementById('phone').value.trim();
-let service=document.getElementById('service').value;
-let date=document.getElementById('date').value;
-let time=document.getElementById('time').value;
-if(!name||!phone) return alert('اكتب اسمك ورقمك الأول');
-let myNumber='201003827748';
-let msg=`حجز جديد 💈%0Aالاسم: ${name}%0Aالرقم: ${phone}%0Aالحلاقة: ${service}%0Aاليوم: ${date}%0Aالساعة: ${time}`;
-window.open(`https://wa.me/${myNumber}?text=${msg}`,'_blank');
-}
-</script>
-</body>
-</html>
+function showPrice(){let s=document.getElementById('service');document.getElementById('price').innerText='السعر: '+(s.value.split('-')[1]||'');}
+function book(){let n=document.getElementById('name').value.trim(),p=document.getElementById('phone').value.trim(),s=document.getElementById('service').value,d=document.getElementById('date').value,t=document.getElementById('time').value;if(!n||
