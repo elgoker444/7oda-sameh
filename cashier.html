@@ -1,65 +1,37 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>الكاشير - 7oda Sameh 💈</title>
-<style>
-*{box-sizing:border-box;font-family:system-ui} body{margin:0;background:#111;color:#fff;padding:14px}
-.card{background:#1e1e1e;border:1px solid #333;border-radius:16px;padding:16px;max-width:520px;margin:auto}
-h1{text-align:center;color:#FFD700} label{display:block;margin-top:12px;font-weight:700}
-input,select{width:100%;padding:13px;border-radius:10px;border:1px solid #444;background:#0f0f0f;color:#fff;font-size:16px;margin-top:6px}
-.row{display:flex;gap:8px} .row button{flex:1}
-button{padding:14px;border:0;border-radius:12px;background:#FFD700;color:#000;font-size:17px;font-weight:800;margin-top:14px;width:100%}
-button.green{background:#25D366;color:#fff} button.red{background:#e11d48;color:#fff}
-.item{background:#0f0f0f;border:1px solid #333;border-radius:12px;padding:10px;margin-top:8px;display:flex;justify-content:space-between;align-items:center}
-.total{text-align:center;font-size:22px;color:#FFD700;font-weight:800;margin-top:14px}
-</style>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>الكاشير - 7oda Sameh</title>
+<style>*{box-sizing:border-box;font-family:system-ui}body{margin:0;background:#111;color:#fff;padding:14px}.card{background:#1e1e1e;border:1px solid #333;border-radius:16px;padding:16px;max-width:520px;margin:auto}h1{text-align:center;color:#FFD700}label{display:block;margin-top:12px;font-weight:700}input,select{width:100%;padding:13px;border-radius:10px;border:1px solid #444;background:#0f0f0f;color:#fff;font-size:16px;margin-top:6px}.row{display:flex;gap:8px}.row button{flex:1}button{padding:14px;border:0;border-radius:12px;background:#FFD700;color:#000;font-size:17px;font-weight:800;margin-top:14px;width:100%}button.green{background:#25D366;color:#fff}button.red{background:#e11d48;color:#fff}.item{background:#0f0f0f;border:1px solid #333;border-radius:12px;padding:10px;margin-top:8px;display:flex;justify-content:space-between}.total{text-align:center;font-size:22px;color:#FFD700;font-weight:800;margin-top:14px}</style>
 </head>
-<body>
-<div class="card">
+<body><div class="card">
 <h1>💈 كاشير 7oda Sameh</h1>
 <label>اسم الزبون</label><input id="cust" placeholder="اسم الزبون">
 <label>اختار خدمة</label>
 <select id="srv">
-<option value="50">حلاقة شعر - 50 ج</option>
-<option value="40">حلاقة شعر طفل - 40 ج</option>
-<option value="60">عرض السريع - 60 ج</option>
-<option value="100">عرض الاستايل - 100 ج</option>
-<option value="100">عرض الروقان - 100 ج</option>
-<option value="20">تحديد دقن - 20 ج</option>
-<option value="30">حلاقة دقن - 30 ج</option>
-<option value="40">استشوار - 40 ج</option>
-<option value="100">جلسة تنظيف بشرة - 100 ج</option>
-<option value="500">باكج العريس - 500 ج</option>
+<optgroup label="🔥 العروض">
+<option value="60">عرض السريع - 60 ج</option><option value="100">عرض الاستايل - 100 ج</option><option value="100">عرض الروقان - 100 ج</option><option value="40">حلاقة الطفل مع التسريحة - 40 ج</option>
+</optgroup>
+<optgroup label="✂️ الحلاقة">
+<option value="50">حلاقة شعر - 50 ج</option><option value="40">حلاقة شعر طفل - 40 ج</option><option value="25">تحديد دقن - 25 ج</option><option value="20">تحديد كامل - 20 ج</option><option value="30">حلاقة دقن - 30 ج</option><option value="40">حلاقة دقن بالبخار - 40 ج</option><option value="40">استشوار - 40 ج</option><option value="50">استشوار + مكواة - 50 ج</option><option value="40">تسريحة ويفي / كيرلي فوم - 40 ج</option><option value="80">كيرلي بليس - 80 ج</option><option value="20">تونيك - 20 ج</option>
+</optgroup>
+<optgroup label="🧖‍♂️ SPA">
+<option value="25">فوطة سخنة + ساقعة - 25 ج</option><option value="10">ماسك عادي - 10 ج</option><option value="20">ماسك VIP - 20 ج</option><option value="50">2 ماسك بخار + شفط دهون - 50 ج</option><option value="20">شمع / اتراز - 20 ج</option><option value="40">شمع كامل الوجه - 40 ج</option><option value="100">تنظيف بشرة صغرى - 100 ج</option><option value="150">تنظيف بشرة وسط - 150 ج</option><option value="200">تنظيف VIP + كولاجين - 200 ج</option><option value="60">مساج شعر وترطيب - 60 ج</option>
+</optgroup>
+<optgroup label="🎨 معالجات">
+<option value="20">حمام كريم - 20 ج</option><option value="60">حمام زيت عادي - 60 ج</option><option value="120">حمام زيت + كولاجين - 120 ج</option><option value="40">نانو هاي - 40 ج</option><option value="80">نانو كولاجين - 80 ج</option><option value="80">صبغة سواد - 80 ج</option><option value="80">حنة شعر - 80 ج</option><option value="250">صبغة سيلفر - 250 ج</option><option value="400">صبغة سيلفر كاملة - 400 ج</option><option value="400">فرد بروتين - 400 ج</option>
+</optgroup>
+<optgroup label="🤵 العريس">
+<option value="500">باكج العريس الكامل - 500 ج</option><option value="1000">باكج العريس مع بروتين - 1000 ج</option><option value="1500">خدمة العريس في البيت - 1500 ج</option>
+</optgroup>
+<optgroup label="🧴 النظافة">
+<option value="5">فوطة خاصة - 5 ج</option><option value="5">شفرة حادة - 5 ج</option><option value="5">فوطة تنشيف - 5 ج</option>
+</optgroup>
 </select>
 <button onclick="addItem()">+ أضف للفاتورة</button>
-<div id="list"></div>
-<div class="total" id="total">الإجمالي: 0 ج</div>
-<div class="row"><button class="green" onclick="finish('كاش')">💵 دفع كاش</button><button onclick="finish('فودافون كاش')">📱 فودافون كاش</button></div>
+<div id="list"></div><div class="total" id="total">الإجمالي: 0 ج</div>
+<div class="row"><button class="green" onclick="finish('كاش')">💵 كاش</button><button onclick="finish('فودافون كاش')">📱 فودافون كاش</button></div>
 <button class="red" onclick="clearAll()">مسح الكل</button>
-<p style="text-align:center;color:#aaa;font-size:13px">الفاتورة بتتحفظ عندك بس، ومش بتتبعت للزبون</p>
 </div>
-<script>
-let items=[], total=0;
-function addItem(){
-let s=document.getElementById('srv');
-let name=s.options[s.selectedIndex].text;
-let price=parseInt(s.value);
-items.push({name,price}); total+=price; render();
-}
-function render(){
-let l=document.getElementById('list'); l.innerHTML='';
-items.forEach((it,i)=>{ l.innerHTML+=`<div class="item"><span>${it.name}</span><b>${it.price} ج</b></div>` });
-document.getElementById('total').innerText='الإجمالي: '+total+' ج';
-}
-function finish(method){
-let cust=document.getElementById('cust').value||'زبون';
-let txt=`فاتورة 7oda Sameh 💈%0Aالزبون: ${cust}%0A`+items.map(i=>`- ${i.name}`).join('%0A')+`%0Aالإجمالي: ${total} ج%0Aالدفع: ${method}`;
-alert('تم حفظ الفاتورة: '+total+' ج - '+method);
-clearAll();
-}
-function clearAll(){items=[];total=0;render();document.getElementById('cust').value='';}
-</script>
-</body>
-</html>
+<script>let items=[],total=0;function addItem(){let s=document.getElementById('srv');let name=s.options[s.selectedIndex].text;let price=parseInt(s.value);items.push({name,price});total+=price;render();}function render(){let l=document.getElementById('list');l.innerHTML='';items.forEach(it=>{l.innerHTML+=`<div class="item"><span>${it.name}</span><b>${it.price} ج</b></div>`});document.getElementById('total').innerText='الإجمالي: '+total+' ج';}function finish(m){let c=document.getElementById('cust').value||'زبون';alert('تم: '+total+' ج - '+m+' - '+c);clearAll();}function clearAll(){items=[];total=0;render();document.getElementById('cust').value='';}</script>
+</body></html>
